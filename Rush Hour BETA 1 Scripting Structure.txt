@@ -1,0 +1,82 @@
+Use notepad to make or edit level packs and rename
+the file extension from txt to pak so that the program knows
+it is a level pack
+
+The very first line contains the number of levels in the pak
+
+Then, you must type in the level number in a consecutive form
+in the following format:
+
+-level-
+
+example:
+
+-1-
+
+level number 0 is not allowed
+
+The third line contains the number of cars to load
+just plug in a number from 1 to 29
+
+---------
+1
+-1-
+1
+---------
+
+number of moves
+time limit in seconds
+
+to load a car, first type in the car number.
+Car numbers are like characters: For example,
+Car 1 is small, red and horizontally positioned
+
+---------
+1        This is the number of cars
+1        This is the car number to load
+---------
+
+The specify the block you want the car to appear
+from 1 to 36. take a look at the matrix and decide
+
+	1	2	3	4	5	6
+	7	8	9	10	11	12
+	13	14	15	16	17	18
+	19	20	21	22	23	24
+	25	26	27	28	29	30
+	31	32	33	34	35	36
+
+If you select block 1 as the position of car 1, which is
+horizontally positioned, the car will occupy block 1 and 2
+
+if you select block 1 for a Vertically positioned vehicle
+sich vehicle will occupy blocks 1 and 7
+
+----------
+1
+1
+1	  The starting position of the car
+----------
+
+There are 4 types of vehicle positions: V2, H2, V3 and H3
+V2 stands for a 2-piece vertically positioned vehicle
+and so on.
+
+We already said that car numbers are like characters that
+have predefined positions. Yes, but you have to plug it
+in too just to make sure your script has no errors
+
+so:
+
+----------
+1
+1
+1
+H2
+----------
+means that we will be loading 1 car. Car 1 will be positioned
+in block 1 and occupying block 2. Also, to make sure we hace no
+errors on our script, we plug in the H2 to say that
+the car is Horizontally positioned and occupies 2 blocks even
+if the program already knows that car 1 is like we described it
+with the last line.
